@@ -13,7 +13,7 @@ $.fn.values = function(data) {
         $.each(els, function() {
             if (this.name && !this.disabled && (this.checked
                             || /select|textarea/i.test(this.nodeName)
-                            || /text|hidden|password/i.test(this.type))) {
+                            || /text|hidden|password|email|number/i.test(this.type))) {
                 if(data[this.name] == undefined){
                     data[this.name] = [];
                 }
